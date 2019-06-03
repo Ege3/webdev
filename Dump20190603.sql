@@ -23,21 +23,22 @@ DROP TABLE IF EXISTS `survey`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `survey` (
-  `ID` int(11) DEFAULT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `tegevusala` text,
-  `Q2_tootajate_arv` int(11) DEFAULT NULL,
-  `Q3_ettevotte_vanus` int(11) DEFAULT NULL,
-  `Q4_tegutsemise_asukoht` int(11) DEFAULT NULL,
-  `Q5_maakonnd` int(11) DEFAULT NULL,
-  `Q6_muugitulu_(€)` int(11) DEFAULT NULL,
-  `Q7_kasum_(€)` int(11) DEFAULT NULL,
-  `Q8_valisosalus` int(11) DEFAULT NULL,
-  `Q9_muuk_valjaspool_eestit` int(11) DEFAULT NULL,
+  `q2_tootajate_arv` int(11) DEFAULT NULL,
+  `q3_ettevotte_vanus` int(11) DEFAULT NULL,
+  `q4_tegutsemise_asukoht` int(11) DEFAULT NULL,
+  `q5_maakonnd` int(11) DEFAULT NULL,
+  `q6_muugitulu` int(11) DEFAULT NULL,
+  `q7_kasum` int(11) DEFAULT NULL,
+  `q8_valisosalus` int(11) DEFAULT NULL,
+  `q9_muuk_valjaspool_eestit` int(11) DEFAULT NULL,
   `innovatsioon_average` double DEFAULT NULL,
   `vanus ` int(11) DEFAULT NULL,
   `juhi_sugu` int(11) DEFAULT NULL,
-  `juhi_haridus` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `juhi_haridus` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=286 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -59,4 +60,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-06-03 23:29:11
+-- Dump completed on 2019-06-04  1:15:06
